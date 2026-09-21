@@ -112,7 +112,7 @@ $$
 dove $n$ rappresenta il numero di variabili considerate.
 Scegliendo un livello di significatività $p=0.05$ per la $\chi^2$ con $3$ gradi di libertà, abbiamo ottenuto $8$ outlier per l'inverno, $2$ per la primavera, $3$ per l'estate e $6$ per l'autunno.
 ![Figure 4: Istogramma di AQI nella stagione primaverile prima e dopo la
-trasformazione](aqi_hist_trasf.png)
+trasformazione](immagine/aqi_trasform.png)
 
 
 ## Range Interquartile
@@ -149,7 +149,7 @@ In questo studio è stata adottata la convenzione di classificare come outlier s
 
 Al termine della fase di identificzione degli outlier, abbiamo proceduto con la validazione, seguendo la strategia descritta in precedenza.
 Il numero finale di outlier per AQI, ottenuto sommando tutti gli outlier stagionali validati è $11$.
-![Figure 5: Outlier finali per AQI ](plot.png)
+![Figure 5: Outlier finali per AQI ](immagine/plot.png)
 
 
 
@@ -266,7 +266,7 @@ In particolare, i modelli ensemble — Random Forest Regressor ed Extra Trees Re
 Infine, per quanto riguarda i modelli Ridge e Lasso, la procedura di Grid Search (considerando separatamente i dataset di training in presenza e in assenza di outlier) ha restituito in tutti i casi valori del coefficiente di regolarizzazione prossimi allo zero, tranne che per il modello Ridge base, indicando come questi termini abbiano avuto un impatto trascurabile sulla stima dei coefficienti. Ciò si è tradotto in prestazioni pressoché analoghe a quelle della regressione lineare standard. 
 
 ![Figure 6: Confronto tra gli $Y_$ e gli $\hat{Y_i}$ per il modello RFR dopo la rimozione
-degli outlier ](y_comparison.png)
+degli outlier ](immagine/y_comparison.png)
 
 ## Commento finale
 In questo lavoro è stato analizzato l’impatto degli outlier sulla predizione dell’Air Quality Index (AQI) per la città di Bakersfield in California. Dopo una fase iniziale di raccolta e processamento dei dati, i potenziali outlier sono stati individuati combinando diversi metodi statistici. La loro validazione è stata condotta adottando un criterio restrittivo su base stagionale, al fine di tenere conto della variabilità intrinseca dei dati legata a pattern tipici di ciascuna stagione (ad esempio specifiche condizioni ambientali e attività umane) e di selezionare esclusivamente osservazioni caratterizzate da una forte evidenza statistica di anomalia. Infine, sono stati implementati diversi modelli di machine learning e ne sono stati confrontati i risultati ottenuti prima e dopo la rimozione degli outlier, evidenziando un miglioramento complessivo delle prestazioni predittive.
@@ -274,4 +274,4 @@ In questo lavoro è stato analizzato l’impatto degli outlier sulla predizione 
 Per i dettagli relativi all’implementazione dello studio, si rimanda alla consultazione del Jupyter Notebook, in cui sono riportate integralmente tutte le fasi pratiche, incluse la preparazione dei dati, la generazione dei grafici e l’esecuzione dei modelli con il calcolo dello score ottenuto.
 
 ![Figure 7:  Confronto della performance dei modelli prima e dopo la rimozione
-degli outlier ](r^2_comparison.png)
+degli outlier ](immagine/r^2comparison.png)

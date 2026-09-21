@@ -62,7 +62,7 @@ In questo lavoro vengono implementati diversi metodi statistici di individuazion
 Poiché i metodi utilizzati si basano su presupposti teorici differenti, le osservazioni individuate in modo congiunto presentano una forte evidenza statistica di anomalia rispetto ai dati osservati. Questa strategia di selezione restrittiva consente perciò di limitare l’inclusione di osservazioni semplicemente estreme ma comunque plausibili all’interno del dataset, concentrando l’analisi su anomalie effettive e statisticamente significative.
 
 Di seguito viene presentato uno schema che riassume i passaggi sequenziali della procedura adottata.
-![Figure 3: Schema di lavoro](immagine/schema_lavoro.png)
+![Figure 3: Schema di lavoro](immagine/schema_lavoro_.png)
 
 
 

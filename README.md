@@ -48,7 +48,7 @@ Nella tabella di seguito riportiamo una breve descrizione generale del dataset, 
 | Numeriche               | 15        |
 
 ![Figure 1: Istogramma della variabile AQI](immagine/aqi_ist.png)
-![Figure 2: Matrice di correlazione delle variabili](immagine/matricedicorrelazione.png).
+![Figure 2: Matrice di correlazione delle variabili](immagine/matrice di correlazione.png).
 
 ## Identificazione e validazione degli Outlier
 Un outlier è un’osservazione che si discosta in modo significativo dalle altre e che solleva interrogativi circa la propria origine. In termini statistici, gli outlier sono valori che presentano una deviazione marcata rispetto al valore medio del campione. La presenza di tali osservazioni può influenzare in modo rilevante i coefficienti di un modello di regressione e, più in generale, le prestazioni dei modelli di apprendimento automatico.
